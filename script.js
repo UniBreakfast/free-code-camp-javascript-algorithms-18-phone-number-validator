@@ -23,11 +23,14 @@ checkBtn.addEventListener('click', e => {
 
   if (regex.some(re => re.test(value))) {
     resultsDiv.textContent = `Valid US number: ${value}`
+    resultsDiv.classList.remove('error');
   } else {
     resultsDiv.textContent = `Invalid US number: ${value}`
+    resultsDiv.classList.add('error');
   }
 });
 
 clearBtn.addEventListener('click', () => {
   resultsDiv.innerHTML = '';
+  resultsDiv.classList.remove('error');
 });

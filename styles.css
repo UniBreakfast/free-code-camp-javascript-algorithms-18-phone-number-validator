@@ -103,6 +103,12 @@ button {
   color: #2e7d32;
 }
 
+#results-div.error {
+  background: #ffcdd2;
+  border: 1px solid #ef9a9a;
+  color: #b71c1c;
+}
+
 /* Responsiveness */
 @media (max-width: 600px) {
   main {
